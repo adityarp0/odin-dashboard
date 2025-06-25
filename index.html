@@ -1,69 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DashBoard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DashBoard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="box1">
-            <div class="room" id="dashboard">Dashboard</div>
-            <div class="room" id="empty1"></div>
-            <div class="room" id="home">Home</div>
-            <div class="room" id="profile">Profile</div>
-            <div class="room" id="history">History</div>
-            <div class="room" id="tasks">Tasks</div>
-            <div class="room" id="communities">Communities</div>
-            <div class="room" id="empty2"></div>
-            <div class="room" id="settings">Settings</div>
-            <div class="room" id="support">Support</div>
-            <div class="room" id="privacy">Privacy</div>
-        </div>
+  <div class="container">
+    <div class="box1">
+      <div class="room" id="dashboard"><strong><h1>DashBoard</h1></strong></div>
+      <div class="room1" id="empty1"></div>
+      <div class="room" id="home"><strong>Home</strong></div>
+      <div class="room" id="profile"><strong>Profile</strong></div>
+      <div class="room" id="history"><strong>History</strong></div>
+      <div class="room" id="tasks"><strong>Tasks</strong></div>
+      <div class="room" id="communities"><strong>Communities</strong></div>
+      <div class="room1" id="empty2"></div>
+      <div class="room" id="settings"><strong>Settings</strong></div>
+      <div class="room" id="support"><strong>Support</strong></div>
+      <div class="room" id="privacy"><strong>Privacy</strong></div>
 
-        <div class="box2">
-            <div class="subbox1">
-                <div class="half1"></div>
-                <div class="half2"></div>
-            </div>
-            <div class="subbox2">
-                <div class="box2half1">
-                    <div class="box2half1content">Your Projects</div>
-                    <div class="box2half1grid">
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                        <div class="card"></div>
-                                
-                    </div>
-                </div>
-                <div class="box2half2">
-                    <div class="announcementblock">
-                        <div class="announcementtitle"><strong><em>Announcements</em></strong></div>
-                        <div class="announcementgrid">
-                            <div class="announcementcard">
-                                <div class="announce-title"><strong>Site Maintenance</strong></div>
-                                <div class="announce-content">Scheduled maintenance on 25th June from 1 AM to 4 AM.</div>
-                            </div>
-
-                            <div class="announcementcard">
-                                <div class="announce-title"><strong>Privacy Update</strong></div>
-                                <div class="announce-content">We’ve updated our privacy policy. Please review the changes.</div>
-                            </div>
-                            </div>
-
-                    </div>
-                    <div class="trendingblock">
-                        <div class="trendingtitle"><strong><em>Trending</em></strong></div>
-                        <div class="trendingbox"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    
+
+    <div class="box2">
+      <div class="subbox1">
+        <div class="half1">
+          <div class="searchside">
+            <div class="searchlogo">
+              <img src="magnify.svg" alt="searchlogo" width="24" height="24" />
+            </div>
+            <div class="searchbar">
+              <input type="search" placeholder="Search" />
+            </div>
+          </div>
+          <div class="myaccount">
+            <div class="notification">
+              <img src="bellring.svg" alt="notifylogo" width="24" height="24" />
+            </div>
+            <div class="mylogo">
+              <img src="mylogo.png" alt="mylogo" width="50" height="40" />
+            </div>
+            <div class="myname"><strong>Pedro Alonso</strong></div>
+          </div>
+        </div>
+
+        <div class="half2">
+          <div class="accountsection">
+            <div class="accountlogo">
+              <img src="mylogo.png" alt="mylogo" width="60" height="50" />
+            </div>
+            <div class="accountdetails">
+              <div class="accountid"><strong><em>@berlin</em></strong></div>
+              <div class="accountname"><strong><em>Pedro Alonso</em></strong></div>
+            </div>
+          </div>
+          <div class="buttonsection">
+            <button type="submit"><strong>New</strong></button>
+            <button type="submit"><strong>Upload</strong></button>
+            <button type="submit"><strong>Share</strong></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="subbox2">
+        <div class="box2half1">
+          <div class="box2half1content">Your Projects</div>
+          <div class="box2half1grid">
+            <div class="card">
+              <div class="card-title"><strong>Portfolio Site</strong></div>
+              <div class="card-desc">A responsive personal website showcasing projects, skills, and contact info using HTML, CSS, and JavaScript.</div>
+            </div>
+            <div class="card">
+              <div class="card-title"><strong>Task Manager</strong></div>
+              <div class="card-desc">A productivity tool that helps users create, edit, and track daily tasks with local storage support.</div>
+            </div>
+            <div class="card">
+              <div class="card-title"><strong>Blog Platform</strong></div>
+              <div class="card-desc">A full-stack blogging site with user authentication, rich-text editor, and post categorization.</div>
+            </div>
+            <div class="card">
+              <div class="card-title"><strong>Weather App</strong></div>
+              <div class="card-desc">A sleek weather dashboard that displays real-time weather data from OpenWeather API with search functionality.</div>
+            </div>
+            <div class="card">
+              <div class="card-title"><strong>Chat App</strong></div>
+              <div class="card-desc">A real-time messaging platform using WebSockets, supporting multiple rooms and user nicknames.</div>
+            </div>
+            <div class="card">
+              <div class="card-title"><strong>Finance Tracker</strong></div>
+              <div class="card-desc">An expense tracking tool to log income and expenses, visualize trends, and set monthly budgets.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box2half2">
+          <div class="announcementblock">
+            <div class="announcementtitle"><strong><em>Announcements</em></strong></div>
+            <div class="announcementgrid">
+              <div class="announcementcard">
+                <div class="announce-title"><strong>Site Maintenance</strong></div>
+                <div class="announce-content">Scheduled maintenance on 25th June from 1 AM to 4 AM.</div>
+              </div>
+              <div class="announcementcard">
+                <div class="announce-title"><strong>Privacy Update</strong></div>
+                <div class="announce-content">We’ve updated our privacy policy. Please review the changes.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trendingblock">
+            <div class="trendingtitle"><strong><em>Trending</em></strong></div>
+            <div class="trendingbox">
+              <div class="trendinggrid">
+                <div class="trendingaccount">
+                  <div class="trendinglogo">
+                    <img src="pic1.png" alt="pic1" width="40" height="35" />
+                  </div>
+                  <div class="trendingprofile">
+                    <div class="trendingid">@sydneysweeney</div>
+                    <div class="trendingname">Sydney Sweeney</div>
+                  </div>
+                </div>
+                <div class="trendingaccount">
+                  <div class="trendinglogo">
+                    <img src="pic2.png" alt="pic2" width="40" height="35" />
+                  </div>
+                  <div class="trendingprofile">
+                    <div class="trendingid">@anadearmas</div>
+                    <div class="trendingname">Ana De Armas</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div> 
 </body>
 </html>
